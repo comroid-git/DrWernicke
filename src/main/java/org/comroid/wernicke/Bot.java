@@ -14,6 +14,8 @@ public final class Bot extends JavacordBotBase {
 
     private Bot(DiscordApi api) {
         super(DIR_DATA, api);
+
+        registerCommands(Command.values());
     }
 
     public static void main(String[] args) {
